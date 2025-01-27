@@ -16,34 +16,11 @@ Run Docker with the `python:3.12.8` image in an interactive mode, using the entr
 
 1. **Command in Bash:**
    ```bash
-   docker run --rm python:3.12.8 bash -c 'pip --version'
+   docker run -it --entrypoint bash python:3.12.8
+
    ```
-
-   The output confirms that the `pip` version is **24.3.1**.
-
-2. **Dockerfile Approach:**
-
-   - Create a `Dockerfile` ([dockerfile](./dockerfile)):
-
-     ```dockerfile
-     # Use the Python 3.12.8 image
-     FROM python:3.12.8
-
-     # Set the entrypoint to bash
-     ENTRYPOINT ["bash", "-c"]
-
-     # Run the command to check pip version
-     CMD ["pip --version"]
-     ```
-
-   - Build and run the Docker image:
-
-     ```bash
-     docker build -t python-pip-check .
-     docker run python-pip-check
-     ```
-
-   The result is the same: **24.3.1**.
+then using `pip --version`
+The output confirms that the `pip` version is **24.3.1**.
 
 ---
 
@@ -89,10 +66,6 @@ volumes:
 
 - The `hostname` is `db` because that’s the service name used in the `docker-compose.yaml` file.
 - The `port` is `5432` because the database container exposes its internal port `5432`.
-- Why not the other options?
-  - `postgres:5433`: Incorrect because `postgres` is not the hostname.
-  - `localhost:5432`: Incorrect because `localhost` refers to the host machine, not the Docker network.
-  - `db:5433`: Incorrect because the internal port of the Postgres service is `5432`.
 
 ---
 
