@@ -12,9 +12,9 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
 
 **Solution:** 
 After running the gcp_taxi flow as in this screenshot:
-![hello](./images/Pasted image 20250205144916.webp)
+![[./images/1.webp]]
 we can see the file uploaded in the bucket as follows:
-![[Pasted image 20250205145058.webp]]
+![[./images/2.webp]]
 then the answer is : `128.3` 
 
 ---
@@ -28,7 +28,7 @@ then the answer is : `128.3`
 
 **Solution:**
 Investigating the output we see this in extract task:
-![[Pasted image 20250205150854.webp]]
+![[./images/3.webp]]
 then the answer is : `green_tripdata_2020-04.csv`
 
 ---
@@ -42,7 +42,7 @@ then the answer is : `green_tripdata_2020-04.csv`
 
 **Solution:**
 After running backfill triggers for whole 2020 year for yellow taxi data and investigating the table
-![[Pasted image 20250205160951.webp]]
+![[./images/5.webp]]
 then the answer is: `24,648,499` 
 
 ---
@@ -56,7 +56,7 @@ then the answer is: `24,648,499`
 
 **Solution:**
 After running backfill triggers for whole 2020 year for green taxi data and investigating the table
-![[Pasted image 20250205160714.webp]]
+![[./images/4.webp]]
 then the answer is : `1,734,051`
 
 ---
@@ -70,7 +70,7 @@ then the answer is : `1,734,051`
 
 **Solution:**
 After running gcp_taxi flow for yellow taxi data and investigating the table of 2021-03
-![[Pasted image 20250205161415.webp]]
+![[./images/6.webp]]
 then the answer is: `1,925,152` 
 
 ---
@@ -84,7 +84,7 @@ then the answer is: `1,925,152`
 
 **Solution:**
 Answered from the documentation
-![[Pasted image 20250205162442.webp]]
-![[Pasted image 20250205162523.webp]]
+![[./images/7.webp]]
+![[./images/8.webp]]
 
 ---
