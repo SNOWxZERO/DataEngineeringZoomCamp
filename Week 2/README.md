@@ -12,7 +12,7 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
 
 **Solution:** 
 After running the gcp_taxi flow as in this screenshot:
-[[Pasted image 20250205144916.webp]]
+![hello](./images/Pasted image 20250205144916.webp)
 we can see the file uploaded in the bucket as follows:
 ![[Pasted image 20250205145058.webp]]
 then the answer is : `128.3` 
